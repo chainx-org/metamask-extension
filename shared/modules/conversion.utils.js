@@ -125,10 +125,7 @@ const converter = ({
   }
 
   if (numberOfDecimals !== undefined && numberOfDecimals !== null) {
-    convertedValue = convertedValue.round(
-      numberOfDecimals,
-      BigNumber.ROUND_HALF_DOWN,
-    );
+    convertedValue = convertedValue.round(18, BigNumber.ROUND_HALF_DOWN);
   }
 
   if (roundDown) {

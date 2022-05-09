@@ -67,7 +67,7 @@ const EthOverview = ({ className }) => {
                 data-testid="eth-overview__primary-currency"
                 value={balance}
                 type={PRIMARY}
-                ethNumberOfDecimals={4}
+                ethNumberOfDecimals={18}
                 hideTitle
               />
               {balanceIsCached ? (
@@ -83,7 +83,7 @@ const EthOverview = ({ className }) => {
                 data-testid="eth-overview__secondary-currency"
                 value={balance}
                 type={SECONDARY}
-                ethNumberOfDecimals={4}
+                ethNumberOfDecimals={18}
                 hideTitle
               />
             )}
